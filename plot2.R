@@ -48,6 +48,6 @@ filtered_tidy_data <- data_set %>%
 #Configure the png file to be created with the plot content
 png(filename = "./plot2.png", width = 480, height = 480, units = "px", bg = "white")
 Sys.setlocale("LC_TIME", "English")
-#Create the histogram and export the file
+
 plot(filtered_tidy_data$Time, filtered_tidy_data$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kW)")
 dev.off()
